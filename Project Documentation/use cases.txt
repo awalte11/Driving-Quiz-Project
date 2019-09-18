@@ -1,0 +1,40 @@
+Use Cases
+
+Use Case: Prepare for Driver's Exam via quiz 'game'
+
+User connects to website. Optionally, user logs in to website. User selects preparation mode. Optionally, user sets options. User plays quiz 'game'. User receives results. User signs out if signed in and finished.
+
+Use Case: Subscribe
+
+    After user has signed up on website they are promoted with an optional choice to subscribe. The user can either subscribe and be taken to a payment option or chose to not subscribe. If subscribe is chosen, the user will be prompted with the type of payment option. The user will complete the payment process and receive an email confirmation of the subscription. 
+
+    
+
+Use Case: Create Account
+
+Registering user signs into website. User selects create account. User supplies user name, password first name, last name, email. Website does verification things. <ELABORATE>  Information recorded, confirmation email sent. User signs out.
+
+Use Case: Government Access
+    
+    Government User connects to website. Government user logs in. Government user accesses database. <NEEDS DATABASE DETAILS> Government user signs out.
+
+Use Case: Create Parental Access
+
+    User A (parent) logs in. Goes to request access page. Inputs user name of User B (child) to request access to. Message sent to B's email. 
+
+    B can confirm or deny. On confirm, link set between accounts.
+
+Use Case: Parental Access
+
+    Logged in parent account selects view child records. Site displays child records.
+
+
+
+Use Case: Connect to social media
+    
+    User can accept to connect with their social media; Facebook, Instagram, etc. It will then take them to authenticate their login with social media. It will then link the user account to the social media account. 
+
+Use Case: Cancel Subscription
+
+    User logs into account and choses manage account function. User will have the option to pause their subscription or fully cancel/delete their account. 
+

@@ -1,0 +1,12 @@
+Requirements
+
+Online access
+User registration
+Usable without registration
+Test written / practical driving skills via quiz
+Allow appropriate government access
+Payment system, subscription based
+Allow parental review for minor users
+Social media integration
+Monetization
+Central data storage
