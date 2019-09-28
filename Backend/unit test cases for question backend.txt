@@ -1,0 +1,82 @@
+TOPIC: Questions
+Function: Get Question List
+Variables: Number of questions, type of questions (theory/practical/both)
+
+Cases to test:
+Error Cases
+	Less than 1 question requested
+	More questions than in bank
+	More questions than in bank for type
+	No type specified
+	
+Desired outcome: error message
+	
+Working cases
+Each combo of:
+
+	Number:
+	One
+	Two 
+	Twenty
+	
+	Type:
+	Each
+	
+Desired outcome: Return appropriate list of question ID's of validated questions
+
+Function: Get question by ID
+Variables: ID
+Error Cases
+	Bad ID
+	Question found is bad
+	
+Working Cases
+	Return question for ID
+	
+	
+---
+Internal functions below
+---
+Function: Validate question:
+Variables: Question
+Working cases
+	Valid question
+
+	Invalid question (return problem)
+
+
+---
+Admin tools below
+---
+	
+Function: Add Question
+Variables: Practical or Theoretical (boolean), Question, answer information (correct answer, possible answers)
+
+(assuming multiple choice setup with four answers for now)
+
+Error cases:
+	No question
+	Incorrect number of possible answers
+	No correct answer given
+	
+Working cases
+	All good
+	
+Function: Remove question
+Variable: ID of question
+
+Working Cases:
+	Question removed
+	
+Error cases
+	Bad ID
+	
+Get all questions:
+Variables: None
+
+Working cases:
+	Returns all questions
+
+	
+
+
