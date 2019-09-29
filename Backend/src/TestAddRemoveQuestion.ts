@@ -1,5 +1,8 @@
-//script goes here
+//setup script goes here
 
+//run script goes hear
+
+//teardown script goes here
 
 //Currently assuming 4-choice multiple question
 //Add Question
