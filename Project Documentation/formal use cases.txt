@@ -1,0 +1,74 @@
+Use cases high detail:
+
+Use Case: Prepare for Driver's Exam via quiz 'game'
+
+Trigger: User selects quiz start option.
+
+Preconditions: None
+Postconditions: User has taken quiz, user given report
+
+Main Route
+1. System prompts user for configuration - number and type of questions
+2. User selects configuration and confirms
+3. System presents question and possible answers
+4. User selects answer
+5. System marks answer true/false, stores result
+6. Repeat 3-5 until questions finished.
+7. Show user final grade
+8. Store Result In Account Records (See AC 1)
+9. Ask if user wants to make a social media brag-post (AC2)
+
+
+
+Alternate Courses
+AC1. If anonymous user stop here
+AC2. if no social media connection, stop here
+
+----
+
+Use Case: Create Account
+
+(This may be handled in its entirety by Cloudfire)
+
+Trigger: User clicks register button
+
+Precondition: User not already logged in
+
+Postcondition: User is now registered
+
+Main Course:
+1. System prompts user for user name, email address, password, password confirm
+2. User enters and confirms (EX1, EX2)
+3. System verifies (EX3, EX4)
+4. System moves data into 'pending accounts' storage ()
+5. System sends confirmation email and notifies user
+6. User selects confirmation link in email
+7. Account is created
+
+Exceptions
+EX1. Email format invalid: Return to 1 and notify user
+EX2. Passwords do not match or do meet requirements: Return to 1 and notify user
+EX3. Email Address in use: Return to 1 and notify user
+EX4. User Name in use: Return to 1 and notify user
+
+---
+
+Use Case: Login
+Trigger: User accesses login form (will appear on many pages most likely)
+
+Precondition: User not already logged in
+
+Postcondition: User is logged in
+
+Main Course:
+1. System prompts user for user name, password
+2. User enters and confirms
+3. System verifies (EX1, EX2)
+4. User is logged in
+
+EX1. User name or password invalid
+1. Notify User
+2. Back to 1
+
+EX1. Five invalid login attempts to same account in succession
+1. Notify User, temperarily block logins to account
