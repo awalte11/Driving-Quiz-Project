@@ -1,0 +1,9 @@
+Focus on the login/quiz/personal report section.
+
+When touching those, run tests to confirm you didn't break anything.
+
+Once integration tests are set up - use those.
+
+Otherwise, use unit tests.
+
+Details to specified with better understanding of code and implementation.
