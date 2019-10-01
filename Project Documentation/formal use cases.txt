@@ -60,15 +60,134 @@ Precondition: User not already logged in
 
 Postcondition: User is logged in
 
+
+
 Main Course:
 1. System prompts user for user name, password
 2. User enters and confirms
 3. System verifies (EX1, EX2)
 4. User is logged in
+5. User is shown logged-in version of current page
 
+
+Exceptions:
 EX1. User name or password invalid
 1. Notify User
 2. Back to 1
 
-EX1. Five invalid login attempts to same account in succession
+EX2. Five invalid login attempts to same account in succession
 1. Notify User, temperarily block logins to account
+
+---
+
+Use Case: Logout
+
+Trigger: User clicks log out
+
+Precondition: User is logged in
+
+Postcondition: User is logged out
+
+Main Course:
+1. System logs user out
+2. User is now at anonymous user version of current page
+
+
+---
+Use Case: View Records
+
+Trigger: User selects view records
+
+Precondition: None
+
+Postcondition: None
+
+Main Course:
+1. System fetches records for user (AC1), (AC2), 
+2. System displays records - table of test date/options/scores (EX1)
+
+Alternate Courses
+AC1: If User is not logged in
+1. System reminds users that only records storage requires registration, shows link to login page.
+
+AC2: If user has access to multiple sets of user records (has parent view acces)
+1. System shows list of available user records
+2. User selects record to view
+3. System displays records - table of test date/options/scores
+
+EX1. Records are empty - no tests taken.
+1. System displays this, shows link to test
+
+---
+
+Use Case: DMV view
+
+Trigger: DMV user selects view records
+
+Precondition: DMV user logged in
+
+Postcondition: None?
+
+Main Course
+1: DMV user selects view records
+2: System shows DMV user list of records to view
+3: DMV user selects user to view records for
+4: DMV user shown user records
+
+
+---
+
+Use Case: Create Parental Access (parent start)
+
+Actors: Parent User, Child User
+
+Trigger: Parent user selects request parental accesses
+
+Precondition: Parent is logged in
+
+Post-Condition: Parent User can view child user records
+
+Main Course:
+1. Parent User selects Request Parental Access
+2. System prompts parent user for  child user name they want access to 
+3. Parent User enters and confirms Child User Name. (EX1)
+4. System sends confirmation email to Child User
+5. Child User confirms (EX2)
+6. System establishes parent-child account link
+7. Success email message to parent.
+
+Exceptions:
+EX1: Invalid user name requested
+1. Inform parent user, return to 2.
+
+EX2: Confirmation link not selected within time limt (24 hours?)
+1. Link goes invalid, request canceld.
+
+---
+
+Use Case: Create Parental Access (child start)
+
+Actors: Parent User, Child User
+
+Trigger: Child user selects grant parental accesses
+
+Precondition: Child User is logged in
+
+Post-Condition: Parent User can view child user records
+
+Main Course:
+1. Child User selects Grant Parental Access
+2. System prompts child user for parent user name they want to grant access to 
+3. Child User enters and confirms Parent User Name. (EX1)
+4. System sends confirmation email to Parent User
+5. Parent User confirms (EX2)
+6. System establishes parent-child account link
+7. Success email message to Child.
+
+Exceptions:
+EX1: Invalid user name requested
+1. Inform child user, return to 2.
+
+EX2: Confirmation link not selected within time limt (24 hours?)
+1. Link goes invalid, request canceled.
+
