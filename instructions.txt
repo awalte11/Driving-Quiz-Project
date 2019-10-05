@@ -4,3 +4,4 @@ Open Visual studio code
 Open the workspace file in the root of the repository
 Open a terminal in VS Code, navigate to /Site inside the git repo folder, and enter npm install to download necessary front end packages
 Navigate to /Backend inside the git repo folder, and enter npm install to download necessary back end packages
+
