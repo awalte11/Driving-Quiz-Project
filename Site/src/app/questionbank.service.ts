@@ -28,5 +28,24 @@ export class QuestionbankService {
   {
 
   }
+  
+  
+  /**
+   * Get all questions for use in admin
+   */
+  async getAllQuestions() : Promise<Question[]> {
+    var questions: Question[];
+
+    return questions;
+  }
+  
+  
+  /**
+   * @param question question to remove from DB
+   */
+  async removeQuestion(question : Question)
+  {
+	  
+  }
 
 }
