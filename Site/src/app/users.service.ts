@@ -44,6 +44,8 @@ export class UsersService {
 	  
   }
   
+	//todo - proper docs
+	
   async createUserRecord ( username : string, email : string, firstName : string, lastName : string ) : Promise<User>
   {
 	  var user : User;
@@ -57,18 +59,19 @@ export class UsersService {
 	  return user;
   }
   
-  async getUserRecord ( username : string ) : Promise<User>
+  async getUserInfo ( username : string ) : Promise<User>
   {
 	  var user : User;
 	  
 	  return user;	  
   }
   
-  async addUserToRecord ( record : QuizRecord ) 
+  async addRecordToUser ( record : QuizRecord ) 
   {
 	  
 	  
   }
+  
   
   
 }
