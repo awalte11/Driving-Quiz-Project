@@ -1,3 +1,9 @@
+Use cases handled entirely by wordpress and plugins
+Login, logout, create account, change password, recover password, add/remove/delete question, delete account
+
+Possibly donate?
+
+
 Use cases high detail:
 
 Use Case: Prepare for Driver's Exam via quiz 'game'
@@ -26,9 +32,11 @@ AC2. if no social media connection, stop here
 
 ----
 
+
+
 Use Case: Create Account
 
-(This may be handled in its entirety by Cloudfire)
+(Handled by WP, adapt)
 
 Trigger: User clicks register button
 
@@ -56,6 +64,8 @@ EX4. User Name in use: Return to 1 and notify user
 Use Case: Login
 Trigger: User accesses login form (will appear on many pages most likely)
 
+(Handled by WP, adapt)
+
 Precondition: User not already logged in
 
 Postcondition: User is logged in
@@ -82,6 +92,8 @@ EX2. Five invalid login attempts to same account in succession
 
 Use Case: Logout
 
+(Handled by WP, adapt)
+
 Trigger: User clicks log out
 
 Precondition: User is logged in
@@ -91,7 +103,6 @@ Postcondition: User is logged out
 Main Course:
 1. System logs user out
 2. User is now at anonymous user version of current page
-
 
 ---
 Use Case: View Records
@@ -191,3 +202,13 @@ EX1: Invalid user name requested
 EX2: Confirmation link not selected within time limt (24 hours?)
 1. Link goes invalid, request canceled.
 
+---
+Admin use cases 
+
+Use Case: Add a question
+
+Use Case: Modify a question:
+
+Use Case: Remove a question:
+
+Delete account:

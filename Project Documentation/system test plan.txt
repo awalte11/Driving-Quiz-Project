@@ -1,15 +1,66 @@
 1: Create New Account A
+	Go to site, logged out. select create account button. Enter test username/password/email. get confirmation email. click confirm button
+	Intended result: At site and logged in
+	Tests user registration 
 2: Change Password
+	Go to user profile page (get details) select change password, do the thing (revise this)
+	Intended result: Logged in with new PW
+	Tests user function
 3: Take Quiz (practical only)
-4: Take Second Quiz (both question types)
+	Select take quiz from top menu. Select take practical quiz. Take the quiz. Don't hit the tweet option
+	Intended result: Quiz taken, results given and added to db
+	Tests primary functionality - quiz taking and grading and storing
+4: Take Second Quiz  (both question types) and bragpost
+	Select take quiz from top menu. Select take general quiz. Take the quiz. Hit the tweet option
+	Intended result: Quiz taken, bragpost sent, results given and added to db
+	
+	Tests primary functionality - quiz taking and grading and storing, plus social media function
+
 5: Get And View Report
-6: Do Brag-Post (get dummy account for use here)
-7: Sign Out
+	(NYI, directions TODO)
+	
+	Intended result: User report displayed
+	Tests user report functionality
+	
+6: Sign Out
+	Select sign out in top menu
+	Intended result - logged out
+	Tests user function
+	
+7: Take Anonymous Quiz (theoretical only)
+	Select take quiz from top menu. Select take practical quiz. Take the quiz.
+	Intended result: Quiz taken, results given.
+	Tests quiz function, anonymous user functionality
+8: Use forgot password function
+	Select login. Select forgot password. Do the thing (get details from WP)
+	Intended result: PW changed
+	Tests user account functionality
+	
+<May need to have another signout here>
+	
 9: Sign In To Test Parent Account
+	Select sign in from top bar. Input credentials (ADD THESE). Confirm.
+	Intended result: Signed in
+	Doesn't test anything not already tested on its own.
 10: Send Parent View Request For Account A
+	(NYI, directions TODO)
+	Intended result: Request Sent
+	Tests part one of parent view function
+	
 11: Accept Request via designated email for Account A
+	(NYI, directions TODO)
+	Intended result: Request Accepted
+	Tests part two of parent view function
+
 12: View Report in parent View
-13: Sign Out
+	(NYI, directions TODO)
+	Intended result: Report viewed
+	Tests part two of parent view function
+
+13: Sign 
+	Select sign out in top menu
+	Intended result - logged out
+	Doesn't test anything not already tested on its own.
 14: Sign In to Government View Mode
 15: View Report of Account A.
 16: Sign out of Government View Mode
@@ -18,4 +69,4 @@
 19: Modify A Question
 20: Delete a Question.
 21: Delete Account A.
-21: Sign Out Of Admin Mode
+22: Sign Out Of Admin Mode
