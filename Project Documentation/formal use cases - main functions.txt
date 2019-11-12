@@ -1,10 +1,12 @@
 Use cases handled entirely by wordpress and plugins
 Login, logout, create account, change password, recover password, add/remove/delete question, delete account
 
-Possibly donate?
 
 
-Use cases high detail:
+
+----
+
+Site Use Cases
 
 Use Case: Prepare for Driver's Exam via quiz 'game'
 
@@ -14,95 +16,23 @@ Preconditions: None
 Postconditions: User has taken quiz, user given report
 
 Main Route
-1. System prompts user for configuration - number and type of questions
-2. User selects configuration and confirms
-3. System presents question and possible answers
-4. User selects answer
-5. System marks answer true/false, stores result
-6. Repeat 3-5 until questions finished.
-7. Show user final grade
-8. Store Result In Account Records (See AC 1)
-9. Ask if user wants to make a social media brag-post (AC2)
+1. User clicks take quiz button
+2. System routes user to select quiz page.
+3. User selects quiz type
+4. System presents questions
+5. User answers questions
+6. User clicks finish
+7. System grades quiz
+8. Show user final grade
+9. Store Result In Account Records (See AC 1)
+10. Shows button to make social media brag-post (AC2) (triple-check how this works)
 
+Note: 8-10 occur concurrently from user perspective, 
 
 
 Alternate Courses
 AC1. If anonymous user stop here
 AC2. if no social media connection, stop here
-
-----
-
-
-
-Use Case: Create Account
-
-(Handled by WP, adapt)
-
-Trigger: User clicks register button
-
-Precondition: User not already logged in
-
-Postcondition: User is now registered
-
-Main Course:
-1. System prompts user for user name, email address, password, password confirm
-2. User enters and confirms (EX1, EX2)
-3. System verifies (EX3, EX4)
-4. System moves data into 'pending accounts' storage ()
-5. System sends confirmation email and notifies user
-6. User selects confirmation link in email
-7. Account is created
-
-Exceptions
-EX1. Email format invalid: Return to 1 and notify user
-EX2. Passwords do not match or do meet requirements: Return to 1 and notify user
-EX3. Email Address in use: Return to 1 and notify user
-EX4. User Name in use: Return to 1 and notify user
-
----
-
-Use Case: Login
-Trigger: User accesses login form (will appear on many pages most likely)
-
-(Handled by WP, adapt)
-
-Precondition: User not already logged in
-
-Postcondition: User is logged in
-
-
-
-Main Course:
-1. System prompts user for user name, password
-2. User enters and confirms
-3. System verifies (EX1, EX2)
-4. User is logged in
-5. User is shown logged-in version of current page
-
-
-Exceptions:
-EX1. User name or password invalid
-1. Notify User
-2. Back to 1
-
-EX2. Five invalid login attempts to same account in succession
-1. Notify User, temperarily block logins to account
-
----
-
-Use Case: Logout
-
-(Handled by WP, adapt)
-
-Trigger: User clicks log out
-
-Precondition: User is logged in
-
-Postcondition: User is logged out
-
-Main Course:
-1. System logs user out
-2. User is now at anonymous user version of current page
 
 ---
 Use Case: View Records
@@ -126,12 +56,35 @@ AC2: If user has access to multiple sets of user records (has parent view acces)
 2. User selects record to view
 3. System displays records - table of test date/options/scores
 
-EX1. Records are empty - no tests taken.
+EX1. Records are empty - no tests taken. (NYI)
 1. System displays this, shows link to test
 
 ---
+Use Case: View Child Records (NYI)
 
-Use Case: DMV view
+Trigger: User selects view child records
+
+Precondition: None 
+
+Postcondition: None
+
+Main Course:
+1. System fetches list of quiz records user has access to (AC1), (AC2), 
+2. System fetches those records
+3. System displays records - table of test date/options/scores (EX1)
+
+Alternate Courses
+AC1: If User is not logged in
+1. System reminds users that only records storage requires registration, shows link to login page.
+
+AC2: If user has access to no other records 
+1. System tells user this
+
+EX1. Records are empty - no tests taken. (NYI)
+1. System displays this, shows link to test
+---
+
+Use Case: DMV view (NYI)
 
 Trigger: DMV user selects view records
 
@@ -202,13 +155,4 @@ EX1: Invalid user name requested
 EX2: Confirmation link not selected within time limt (24 hours?)
 1. Link goes invalid, request canceled.
 
----
-Admin use cases 
 
-Use Case: Add a question
-
-Use Case: Modify a question:
-
-Use Case: Remove a question:
-
-Delete account:

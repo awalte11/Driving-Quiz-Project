@@ -1,0 +1,65 @@
+---
+Admin use cases 
+
+Use Case: Add a question
+
+Trigger: Admin user decides to add a question?
+
+Precondition: Logged to an account with dashboard access.
+
+Main Course:
+1. Enter dashboard
+2. Click HD Quiz plugin
+3. Select the quiz to add a question to.
+4. Select Add New Question
+5. Enter the question in the top input bar.
+6. Enter one correct answer and at least 3 incorrect answers in the input bars below.
+7. Set the toggle by the correct answer to set it as such.
+8. OPTIONAL: Switch from the main tab to quizzes tab, and select any other quizzes the question should be added to.
+9. Select Add question.
+
+
+
+Use Case: Modify a question:
+
+Trigger: Admin user decides to modify a question
+
+Precondition: Logged to an account with dashboard access.
+
+Main Course:
+1. Enter dashboard
+2. Click HD Quiz plugin
+3. Select a quiz the question is part of.
+4. Select it from the list of questions.
+5. Modify as desired.
+5a. To change answer test, write in the input bars in the mid-screen.
+5b. To change the correct answer, use the toggles near the input bars.
+6. Select Save question.
+
+Use Case: Remove a question from quizzes
+
+Trigger: Admin user decides to remove a question
+
+Precondition: Logged to an account with dashboard access.
+
+Main Course:
+1. Enter dashboard
+2. Click HD Quiz plugin
+3. Select a quiz the question is part of.
+4. Select it from the list of questions.
+5. Switch from the main tab in the question window to the quiz tab.
+6. Flip the toggles to remove it from the quizzes in quiestion.
+7. Select Save question.
+
+Use Case: Delete a question
+
+Trigger: Admin user decides to delete
+
+Precondition: Logged to an account with dashboard access.
+
+Main Course:
+1. Enter dashboard
+2. Click HD Quiz plugin
+3. Select a quiz the question is part of.
+4. Select it from the list of questions.
+5. Click the garbage bin icon in the top right.
