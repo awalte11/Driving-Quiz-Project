@@ -1,0 +1,13 @@
+HLA
+
+Database to own box outside site.
+
+Reference slides week 3.
+
+plugin diagram 
+
+little more information on back and forth
+
+interface
+
+SPMP
