@@ -1,0 +1,62 @@
+Updated Requirements 
+
+1. Online Access
+	The user must be able to search the domain on a mobile application or 
+	a computer desktop and access the website and its functions. All users 
+	must be able to access the website where ever and when ever.
+
+2. User Registration
+	All users must be able to have the option and ability to create an account
+	through the webpage and access information regarding their profile. The user
+	must provide a user name, email, name, and password to be able to create an
+	account.
+
+3. Usable without registration
+	All users that access the webpage must have the ability to take the quiz without
+	signing in or creating a profile. This will allow any user to continue anonymously
+	through the webpage and browse most of the capabilities. The user will not be able
+	to store information regarding their account and past quiz scores in this feature.
+
+4. Test written/ practical driving skills via quiz
+	The webpage must have a function that is in the form of a quiz. The quiz will be 
+	related to driving skills that will help the user prepare for the real life 
+	driving exam. The user must have the option to click on taking the quiz and 
+	answer each question through the quiz. The quiz could be a variety of different
+	types of questions.
+
+5. Allow appropriate government access
+	The DMV/DOT must have the ability to create an account through the webpage that 
+	allows them the option to view scores taken by other users. This feature will give
+	the user the ability to view scores and names of other users participating in the
+	online quiz.
+
+6. Payment system, subscription based
+	The webpage must have the ability to accept payments electronically both account 
+	subscriptions and donations to the webpage. The payment system must be easily 
+	functional from the user side and collect to one account.
+
+7. Allow parental review for minor users
+	The webpage must have the ability to have different types of accounts available 
+	in the form of a parent account and a regular user. The parent must be able to 
+	create a parent account and link their account with their dependents account. 
+	The dependent account will be sent a verification email that will link the 2 
+	accounts together.
+
+8. Social media integration
+	The system must have the feature for the user to connect to their social media 
+	platforms through their individual accounts. This way users can so called "brag" 
+	about their scores and/ore liking for the webpage. The social media platforms 
+	used will be facebook and twitter.
+
+9. Monetization
+	The system must have the ability to accept donations through the form of paypal
+	so that any user, anonymous or registered, can make a donation to the website. 
+	The system will be connected to a single paypal account that all donations will
+	be collected in.
+
+10. Central data storage
+	The system must have its own database of information that the system will store 
+	information regarding tests  scores for users. The database should be able to be 
+	accessed to display previous results for users at any given time.
+	
+	
