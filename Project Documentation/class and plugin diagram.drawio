@@ -1,0 +1,125 @@
+<mxfile host="www.draw.io" modified="2019-11-13T17:43:39.013Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="VxUwVuvW37EVgtkkptxJ" version="12.2.4" type="github" pages="1">
+  <diagram id="4QF-Ur5j9nH5bSfegs_w" name="Page-1">
+    <mxGraphModel dx="1102" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-1" value="&lt;div&gt;User Interface&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="300" width="120" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-2" value="&lt;div&gt;Wordpress Login System&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="20" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-3" value="Remove Dashboard Access" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="315" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-5" value="&lt;div&gt;Gitium&lt;/div&gt;&lt;div&gt;Connects everything to Git if we can get it to work&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="50" width="120" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-6" value="Profile Builder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="150" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-7" value="HD Quiz" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="490" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-13" value="Wordpress DB" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-14" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1.008;exitY=0.967;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.342;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-2" target="W8SDJ8B_lKYo5ibBlKyl-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="180" as="sourcePoint"/>
+            <mxPoint x="650" y="130" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-15" value="" style="endArrow=none;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-1" target="W8SDJ8B_lKYo5ibBlKyl-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="400" as="sourcePoint"/>
+            <mxPoint x="320" y="350" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-16" value="Keeps People out of Dashboard" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" parent="W8SDJ8B_lKYo5ibBlKyl-15" vertex="1" connectable="0">
+          <mxGeometry x="0.1091" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-17" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.975;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.025;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-1" target="W8SDJ8B_lKYo5ibBlKyl-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="570" as="sourcePoint"/>
+            <mxPoint x="140" y="520" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-19" value="Handles the quiz.&lt;br&gt;&lt;div&gt;Sends questions to users, get answers from users.&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" parent="W8SDJ8B_lKYo5ibBlKyl-17" vertex="1" connectable="0">
+          <mxGeometry x="0.132" y="4" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-20" value="Twitter" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="490" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-21" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-7" target="W8SDJ8B_lKYo5ibBlKyl-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="620" as="sourcePoint"/>
+            <mxPoint x="130" y="570" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-22" value="Built in Bragpost Function" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" parent="W8SDJ8B_lKYo5ibBlKyl-21" vertex="1" connectable="0">
+          <mxGeometry x="-0.0947" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-23" value="Custom Link Code To Store Results" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="400" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-24" value="" style="endArrow=none;startArrow=classic;html=1;entryX=1.008;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.008;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;startFill=1;endFill=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-23" target="W8SDJ8B_lKYo5ibBlKyl-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="460" as="sourcePoint"/>
+            <mxPoint x="130" y="570" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-RFU12WZF-H7HH_dcev-1" value="Sends Quiz Type and Score" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="W8SDJ8B_lKYo5ibBlKyl-24">
+          <mxGeometry x="0.2409" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-27" value="Saves results to custom table" style="endArrow=classic;startArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startFill=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-23" target="W8SDJ8B_lKYo5ibBlKyl-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="620" as="sourcePoint"/>
+            <mxPoint x="130" y="570" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-30" value="WP Data Access" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="210" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-32" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.017;entryY=0.383;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.008;exitY=0.022;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-1" target="W8SDJ8B_lKYo5ibBlKyl-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="620" as="sourcePoint"/>
+            <mxPoint x="130" y="570" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-33" value="Show Results.&lt;br&gt;&lt;div&gt;Get and Display Quiz History&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" parent="W8SDJ8B_lKYo5ibBlKyl-32" vertex="1" connectable="0">
+          <mxGeometry x="0.1026" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8SDJ8B_lKYo5ibBlKyl-34" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-30" target="W8SDJ8B_lKYo5ibBlKyl-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="620" as="sourcePoint"/>
+            <mxPoint x="130" y="570" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-RFU12WZF-H7HH_dcev-3" value="&lt;div&gt;Profile Builder provides&lt;/div&gt;&lt;div&gt; improved login forms&lt;/div&gt;" style="endArrow=classic;startArrow=classic;html=1;entryX=0.35;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-1" target="W8SDJ8B_lKYo5ibBlKyl-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="620" as="sourcePoint"/>
+            <mxPoint x="100" y="570" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-RFU12WZF-H7HH_dcev-5" value="Credentials sent from UI" style="endArrow=classic;startArrow=classic;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="W8SDJ8B_lKYo5ibBlKyl-1" target="W8SDJ8B_lKYo5ibBlKyl-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="160" as="sourcePoint"/>
+            <mxPoint x="440" y="60" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,28 @@
+HLA - cover everything, DB, payment processor, authentification
+
+Class diagram - diagram WP plugins / fucntion
+
+Interface diagram - document connections from WP to outside
+
+Use case / sequence diagrams
+
+use cases / Sequence diagrams: Admin uses, remaining user uses
+	
+Tests
+	Unit/Integrated - redo for WP
+		Cancel Unit Test
+		Focus on integration tests
+	
+	
+	System test plan - add details, write for non-dev
+		- List intended result
+		- list covered requiement
+		
+	Regression - more details
+		Focus
+		
+SPMP
+	update and finish
+		
+Get git plugin
+	

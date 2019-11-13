@@ -1,0 +1,17 @@
+User use cases
+
+Log out
+
+View records
+
+change pw
+
+reset pw
+
+Gov view
+
+Admin cases
+
+Add/remove/modify question
+
+delete account
