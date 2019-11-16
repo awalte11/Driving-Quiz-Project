@@ -9,7 +9,7 @@ Precondition: User not already logged in
 Postcondition: User is now registered
 
 Main Course:
-1. System prompts user for user name, email address, password, password confirm
+1. System prompts user for user name, email address, password, password confirmation, as well as optional information
 2. User enters and confirms (EX1, EX2)
 3. System verifies (EX3, EX4)
 4. System moves data into 'pending accounts' storage ()
@@ -70,7 +70,45 @@ Main Course:
 ---
 
 Use Case: Change Password
-(Check how non admin users do this)
 
-Use Case: Recover password.
-(to implement)
+
+Precondition: User is logged in and at account management page reached by clicking user name in top right.
+
+Postcondition: Password Changed
+
+Main Course:
+1. User enters new password into new password field at bottom of page
+2. User reenters new password into confirm new password field at bottom of page
+3. User clicks update profile button (EX1)
+4. Password changed
+5. Account management page refreshes.
+
+Exceptions:
+EX1. Passwords don't match
+1. User told passwords dont' match
+2. Account management page refreshes.
+
+---
+
+Use Case: Recover Password
+Precondition: User is not logged in.
+
+Trigger: User enters incorrect user name / password combo.
+
+Main Course
+
+1. Recover password link appears.
+2. User clicks link
+3. System sends user to password recovery page.
+4. User inputs email address or user name into form. (EX1)
+5. User clicks confirm button
+6. System sends email to user
+7. User gets email
+8. User clicks reset link in email.
+9. User enters new password.
+10. User clicks confirm.
+11. Password reset.
+12. User sent to wordpress page.
+
+EX1. No such user name or email.
+1. User is told this, page refreshes
