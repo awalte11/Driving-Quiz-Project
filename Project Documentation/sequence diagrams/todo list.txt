@@ -30,11 +30,11 @@ Create Parental Access - Done , but may need modification
 
 Admin cases
 
-Add Question
+Add Question - done
 
-remove Question
+remove Question - Done
 
-modify question
+modify question - done
 
 delete account
 
