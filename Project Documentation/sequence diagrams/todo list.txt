@@ -1,17 +1,41 @@
 User use cases
 
-Log out
+Create Account - done
 
-View records
+Login - Done
 
-change pw
+Logout - Done
 
-reset pw
+change pw - Done
 
-Gov view
+reset pw - Done
+
+---
+Main functions
+
+Take Quiz - Done
+
+View Records - Done
+
+View Child Records - Done
+
+DMV view - Done for current implementation
+
+Create Parental Access (child start) - Done, but may need modification
+ 
+Create Parental Access - Done , but may need modification
+
+---
+
 
 Admin cases
 
-Add/remove/modify question
+Add Question
+
+remove Question
+
+modify question
 
 delete account
+
+

@@ -63,3 +63,7 @@ Main Course:
 3. Select a quiz the question is part of.
 4. Select it from the list of questions.
 5. Click the garbage bin icon in the top right.
+
+Delete Account - TODO?
+
+Add MTA Flag - TODO?
