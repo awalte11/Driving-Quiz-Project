@@ -72,7 +72,7 @@ Main Course:
 Use Case: Change Password
 
 
-Precondition: User is logged in and at account management page reached by clicking user name in top right.
+Precondition: User is logged in and at account management page reached from top bar
 
 Postcondition: Password Changed
 

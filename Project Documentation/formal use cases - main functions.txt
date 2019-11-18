@@ -1,6 +1,4 @@
 Use cases handled entirely by wordpress and plugins
-Login, logout, create account, change password, recover password, add/remove/delete question, delete account
-
 
 
 
@@ -84,7 +82,7 @@ EX1. Records are empty - no tests taken. (NYI)
 1. System displays this, shows link to test
 ---
 
-Use Case: DMV view (NYI)
+Use Case: DMV view
 
 Trigger: DMV user selects view records
 
@@ -93,66 +91,91 @@ Precondition: DMV user logged in
 Postcondition: None?
 
 Main Course
-1: DMV user selects view records
+1: DMV user selects view DMV records (EX1)
 2: System shows DMV user list of records to view
 3: DMV user selects user to view records for
 4: DMV user shown user records
+
+EX1. DMV user flax missing - someone who shouldn't be here got here
+1. You shouldn't be here message pops up instead of records.
 
 
 ---
 
 Use Case: Create Parental Access (parent start)
 
-Actors: Parent User, Child User
-
-Trigger: Parent user selects request parental accesses
-
-Precondition: Parent is logged in
-
-Post-Condition: Parent User can view child user records
-
-Main Course:
-1. Parent User selects Request Parental Access
-2. System prompts parent user for  child user name they want access to 
-3. Parent User enters and confirms Child User Name. (EX1)
-4. System sends confirmation email to Child User
-5. Child User confirms (EX2)
-6. System establishes parent-child account link
-7. Success email message to parent.
-
-Exceptions:
-EX1: Invalid user name requested
-1. Inform parent user, return to 2.
-
-EX2: Confirmation link not selected within time limt (24 hours?)
-1. Link goes invalid, request canceld.
+Dropped.
 
 ---
 
 Use Case: Create Parental Access (child start)
 
-Actors: Parent User, Child User
+Actors: Child User
 
-Trigger: Child user selects grant parental accesses
+Trigger: Child user decides to grant access, at user account screen.
 
 Precondition: Child User is logged in
 
 Post-Condition: Parent User can view child user records
 
 Main Course:
-1. Child User selects Grant Parental Access
-2. System prompts child user for parent user name they want to grant access to 
-3. Child User enters and confirms Parent User Name. (EX1)
-4. System sends confirmation email to Parent User
-5. Parent User confirms (EX2)
-6. System establishes parent-child account link
-7. Success email message to Child.
+1. Child User enters email of desired parent account into input window.
+2. Child user clicks confirm button
+3. System verifies parent email matches an account (EX1)
+4. System adds parent-child link if not already extant
+5. Page updates with new parent child link displayed.
 
 Exceptions:
-EX1: Invalid user name requested
-1. Inform child user, return to 2.
+EX1: Invalid email entered
+1. Inform child user, return to 1
 
-EX2: Confirmation link not selected within time limt (24 hours?)
-1. Link goes invalid, request canceled.
+---
+
+Use Case: Remove Parent Access (Child Start)
+
+Actors: Child User
+
+Trigger: Child user decides to remove access, at user account screen.
+
+Precondition: Child User is logged in
+
+Post-Condition: Parent cannot view child user records
+
+Main Course:
+1. Child User enters email of  parent account to remove from input window. Emails of accounts with parent access are listed directly above option.
+2. Child user clicks confirm button
+3. System verifies parent email matches an account (EX1)
+4. System removes link between the two accounts
+5. Page updates with remaining parent child links.
+
+Exceptions:
+EX1: Invalid email entered
+1. Inform child user, return to 1
+
+---
+
+Use Case: Remove Parent Access (Parent Start)
+
+Actors: Parent User
+
+Trigger: Parent user decides to remove access, at user account screen.
+
+Precondition: Parent User is logged in
+
+Post-Condition: Parent cannot view child user records
+
+Main Course:
+1. Parent User enters email of  parent account to remove from input window. Emails of accounts with child access are listed directly above option.
+2. Parent user clicks confirm button
+3. System verifies chold email matches an account (EX1)
+4. System removes link between the two accounts
+5. Page updates with remaining parent child links.
+
+Exceptions:
+EX1: Invalid email entered
+1. Inform parent user, return to 1
+
+
+
 
 

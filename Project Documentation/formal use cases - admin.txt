@@ -53,7 +53,7 @@ Main Course:
 
 Use Case: Delete a question
 
-Trigger: Admin user decides to delete
+Trigger: Admin user decides to delete question
 
 Precondition: Logged to an account with dashboard access.
 
@@ -64,6 +64,7 @@ Main Course:
 4. Select it from the list of questions.
 5. Click the garbage bin icon in the top right.
 
-Delete Account - TODO?
+Delete Account
 
-Add MTA Flag - TODO?
+
+Add MTA Flag - TO IMPLEMENT
