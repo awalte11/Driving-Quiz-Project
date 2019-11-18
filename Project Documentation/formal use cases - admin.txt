@@ -3,9 +3,8 @@ Admin use cases
 
 Use Case: Add a question
 
-Trigger: Admin user decides to add a question?
 
-Precondition: Logged to an account with dashboard access.
+Precondition: Logged to an account with quiz access.
 
 Main Course:
 1. Enter dashboard
@@ -22,9 +21,8 @@ Main Course:
 
 Use Case: Modify a question:
 
-Trigger: Admin user decides to modify a question
 
-Precondition: Logged to an account with dashboard access.
+Precondition: Logged to an account with quiz access.
 
 Main Course:
 1. Enter dashboard
@@ -36,11 +34,12 @@ Main Course:
 5b. To change the correct answer, use the toggles near the input bars.
 6. Select Save question.
 
+---
+
 Use Case: Remove a question from quizzes
 
-Trigger: Admin user decides to remove a question
 
-Precondition: Logged to an account with dashboard access.
+Precondition: Logged to an account with quiz access.
 
 Main Course:
 1. Enter dashboard
@@ -51,11 +50,11 @@ Main Course:
 6. Flip the toggles to remove it from the quizzes in quiestion.
 7. Select Save question.
 
+--
+
 Use Case: Delete a question
 
-Trigger: Admin user decides to delete question
-
-Precondition: Logged to an account with dashboard access.
+Precondition: Logged to an account with quiz access.
 
 Main Course:
 1. Enter dashboard
@@ -64,7 +63,19 @@ Main Course:
 4. Select it from the list of questions.
 5. Click the garbage bin icon in the top right.
 
+---
+
 Delete Account
 
+Trigger: Admin user decides to delete account
 
-Add MTA Flag - TO IMPLEMENT
+Precondition: Logged to an account with full admin access.
+
+Main Course:
+1. Enter dashboard
+2. Click Users
+3. Click the delete link on the proper account.
+4. Click confirm on confirm screen screen
+5. Account deleted
+
+Add MTA Flag - TO IMPLEMENT, currently involves direct DB edit with WP Data Access
