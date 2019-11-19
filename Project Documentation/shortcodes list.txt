@@ -1,0 +1,38 @@
+In index.php
+
+[show_user_scores]
+Displays quiz record for a user.
+default to currently logged in user
+paramater user_id can be used to show another user - don't bother, I did seperate shortcodes for the cases needed.
+
+[mta_view_display]
+Displays all user quiz records if the logged in user has the gov user flag set.
+Otherwise says 'you shouldn't be here'.
+(Still should put it on a page restricted to MTA users ...) 
+
+[show_all_user_scores]
+Displays all user quiz records
+Do not use, I made it for testing.
+
+[parent_view]
+Shows records of users who gave the current user parent access - IE user's "children"
+
+[child2parent_link_input]
+Parent/Child link creation form, child creating it.
+
+[remove_child2parent_link_input]
+Parent/Child link deletion form, child deleting it.
+
+[displayParentsWithAccess]
+Displays accounts with parent access to current user's records
+
+[remove_parent2child_link_input]
+Parent/Child link deletion form, parent deleting it.
+
+[displayChildAccesses]
+Displays accounts that current account has parent access to
+
+
+[displayChildAccesses]
+
+Displays users who have given current user access to view their records.
