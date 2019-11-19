@@ -78,4 +78,24 @@ Main Course:
 4. Click confirm on confirm screen screen
 5. Account deleted
 
-Add MTA Flag - TO IMPLEMENT, currently involves direct DB edit with WP Data Access
+---
+
+Add MVA Access to account
+
+Precondition: Logged in as admin
+
+Main Course:
+1. Enter dashboard
+2. Click Admin under HD Quiz on the left pane
+3. Enter email address of account to give MVA access in add access input bar.
+4. Click send.
+5. System adds account ID to mva flag table (EX 1)
+6. System confirms account added.
+
+Exceptions:
+EX 1. Invalid email address
+1. System reports this to user
+2. Return to start of 3.
+
+
+
